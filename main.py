@@ -9,7 +9,6 @@ player_won = 0
 """ Possible game states:
 0 -> starting phase, players put down their pieces
 1 -> second phase, players slider their pieces over the board
-2 -> end game, player can jump
 """
 game_state = 0
 test = False # generate a random 0th phase, to test the second phase
