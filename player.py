@@ -17,3 +17,4 @@ class Player:
     def place_piece(self):
         self.pieces_in_hand -= 1
         self.pieces_left_on_board += 1
+        

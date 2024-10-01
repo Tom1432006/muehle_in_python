@@ -5,7 +5,6 @@ class Game:
     # List of all the fields
     board = []
 
-
     def __init__(self):
 
         # create all the fields
@@ -32,8 +31,9 @@ class Game:
         Turn function for phase 1
         """
         move = move.split(" ")
-        if len(move) < 2: return False
-        move_from, move_to = int(move[0]), int(move[1])
+        try:
+            move_from, move_to = int(move[0]), int(move[1])
+        except: return False
 
         # move from has to hold a piece of the player and move to has to be empty
         if 0 > move_from > 23 or self.board[move_from].hold_piece != player.player_symbol or self.board[move_to].hold_piece != EMPTY_FIELD: return False
@@ -162,3 +162,4 @@ class Game:
         print("|           |           |")
         print("%s --------- %s --------- %s" % (self.board[21].hold_str(), self.board[22].hold_str(), self.board[23].hold_str()))
         # print("Zahl der Mühlen %i" % (self.count_muehle(self.board)))
+        

@@ -5,9 +5,6 @@ class Field:
     connections = []
 
     # stores the piece, that lays on the board
-    # 0 for none
-    # 1 for white
-    # 2 for black
     hold_piece = 0
 
     def __init__(self, field_index, empty_field):
