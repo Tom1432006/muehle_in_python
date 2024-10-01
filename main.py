@@ -34,7 +34,7 @@ def initiate_players():
     
     valid_checker = False
     while not valid_checker:
-        symbol_p1 = input("Symbol Spieler 1 (Enter für default): ")
+        symbol_p1 = input("Symbol Spieler 1 (Enter für Standard): ")
         if len(symbol_p1) == 1 or symbol_p1 == "":
             valid_checker = True
         
@@ -52,7 +52,7 @@ def initiate_players():
     
     valid_checker = False
     while not valid_checker:
-        symbol_p2 = input("Symbol Spieler 2 (Enter für default): ")
+        symbol_p2 = input("Symbol Spieler 2 (Enter für Standard): ")
         if len(symbol_p2) == 1 or symbol_p2 == "":
             valid_checker = True
 
