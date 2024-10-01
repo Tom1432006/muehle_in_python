@@ -12,7 +12,6 @@ player_won = 0
 """
 game_state = 0
 test = False # generate a random 0th phase, to test the second phase
-game = game.Game()
 
 def take_piece():
     game.print_board()
@@ -64,6 +63,7 @@ def initiate_players():
 
 if __name__ == "__main__":
     initiate_players()
+    game = game.Game([players[0].player_symbol, players[1].player_symbol])
     # game loop
     while not_done:
         os.system("cls")

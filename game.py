@@ -5,11 +5,11 @@ class Game:
     # List of all the fields
     board = []
 
-    def __init__(self):
+    def __init__(self, player_symbols):
 
         # create all the fields
         for i in range(24):
-            self.board.append(field.Field(i, EMPTY_FIELD))
+            self.board.append(field.Field(i, [EMPTY_FIELD, player_symbols[0], player_symbols[1]]))
 
         # create all the connections
         connections = self.load_connections()
