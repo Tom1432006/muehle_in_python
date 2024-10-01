@@ -115,6 +115,5 @@ if __name__ == "__main__":
 
             turn = (turn+1) % 2 # alternate between 0 and 1
 
-
     game.print_board()
     print(f"{players[player_won].player_name} hat gewonnen!")
